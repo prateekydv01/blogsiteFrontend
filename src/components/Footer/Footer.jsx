@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../logo'
-import './footer.css'
+
 
 function Footer() {
   const currentYear = new Date().getFullYear()
