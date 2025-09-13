@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { Container, PostForm } from '../components'
+import { Container, PostForm } from '../components/index.js'
 import { useNavigate, useParams } from 'react-router-dom'
-import { getPostById } from '../api/blog'
+import { getPostById } from '../api/blog.js'
 
 function EditPost() {
     const [post, setPost] = useState(null)

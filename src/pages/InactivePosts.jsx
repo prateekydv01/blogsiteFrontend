@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { inactivePosts } from '../api'
-import {Header, PostCard} from '../components'
-import {Container} from '../components'
+import {Header, PostCard,Container} from '../components/index.js'
 
 function InactivePosts() {
     const [posts,setPosts]=useState([])

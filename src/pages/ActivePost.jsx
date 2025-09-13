@@ -1,8 +1,8 @@
 // ActivePosts.jsx
 import React, { useEffect, useState } from 'react'
-import { activePosts } from '../api'
-import {Header, PostCard} from '../components'
-import {Container} from '../components'
+import { activePosts } from '../api/blog.js'
+import {Header, PostCard} from '../components/index.js'
+import {Container} from '../components/index.js'
 
 function ActivePosts() {
     const [posts,setPosts]=useState([])

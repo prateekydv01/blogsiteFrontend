@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import { getAllPosts } from '../api/blog'
-import { Container } from '../components'
+import { getAllPosts } from '../api/blog.js'
+import { Container } from '../components/index.js'
 
 function Home() {
   const [posts, setPosts] = useState([])

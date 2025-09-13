@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { PostCard } from '../components'
-import { getAllPosts } from '../api'
-import { Container } from "../components"
+import { getAllPosts } from '../api/blog.js'
+import { Container } from "../components/index.js"
 
 function AllPosts() {
   const [posts, setPosts] = useState([])
