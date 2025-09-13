@@ -167,7 +167,7 @@ function Signup() {
           <p className="text-sm text-gray-600">
             By creating an account, you agree to our{' '}
             <Link
-              to="/terms"
+              to="/signup"
               className="text-blue-600 hover:text-indigo-600 transition-colors duration-200 hover:underline"
             >
               Terms of Service

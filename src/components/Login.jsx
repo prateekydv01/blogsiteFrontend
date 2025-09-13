@@ -134,7 +134,7 @@ function Login() {
         {/* Forgot password link */}
         <div className="mt-8 text-center">
           <Link
-            to="/forgot-password"
+            to="/"
             className="text-sm text-gray-600 hover:text-blue-600 transition-colors duration-200 hover:underline"
           >
             Forgot your password?

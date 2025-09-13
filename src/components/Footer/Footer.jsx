@@ -25,7 +25,7 @@ function Footer() {
             </div>
             <div className="flex justify-center space-x-4">
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/prateekydv__/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-pink-400 transition-colors duration-200"
@@ -36,7 +36,7 @@ function Footer() {
                 </svg>
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/prateek-yadav-b0b278310/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
@@ -47,7 +47,7 @@ function Footer() {
                 </svg>
               </a>
               <a 
-                href="https://github.com" 
+                href="https://github.com/prateekydv01" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-200 transition-colors duration-200"
@@ -70,12 +70,7 @@ function Footer() {
               >
                 Home
               </Link>
-              <Link 
-                to="/about" 
-                className="block text-gray-300 hover:text-white transition-colors duration-200"
-              >
-                About Us
-              </Link>
+              
               <Link 
                 to="/all-posts" 
                 className="block text-gray-300 hover:text-white transition-colors duration-200"
@@ -83,7 +78,7 @@ function Footer() {
                 Blog Posts
               </Link>
               <Link 
-                to="/contact" 
+                to="/" 
                 className="block text-gray-300 hover:text-white transition-colors duration-200"
               >
                 Contact Us
@@ -96,25 +91,25 @@ function Footer() {
             <h3 className="text-lg font-semibold mb-4">Categories</h3>
             <nav className="space-y-2">
               <Link 
-                to="/category/technology" 
+                to="/" 
                 className="block text-gray-300 hover:text-white transition-colors duration-200"
               >
                 Technology
               </Link>
               <Link 
-                to="/category/lifestyle" 
+                to="/" 
                 className="block text-gray-300 hover:text-white transition-colors duration-200"
               >
                 Lifestyle
               </Link>
               <Link 
-                to="/category/tutorials" 
+                to="/" 
                 className="block text-gray-300 hover:text-white transition-colors duration-200"
               >
                 Tutorials
               </Link>
               <Link 
-                to="/category/news" 
+                to="/" 
                 className="block text-gray-300 hover:text-white transition-colors duration-200"
               >
                 News
