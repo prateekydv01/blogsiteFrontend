@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.header_div{
+    padding: 18px 0px ;
+
+}
+
+.header_mobile{
+    background-color: #2f405d;
+}
