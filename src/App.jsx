@@ -6,6 +6,7 @@ import { getCurrentUser } from './api/auth.js';
 import { login, logout } from "./store/authSlice.js"
 import { Footer, Header } from './components/index.js';
 import { Outlet } from 'react-router-dom';
+import LoadingScreen from './components/LoadingScreen.jsx'; // 👈 import splash
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -22,20 +23,21 @@ function App() {
       })
       .catch(() => dispatch(logout()))
       .finally(() => setLoading(false))
-  }, [])
+  }, [dispatch])
 
-  return !loading ? (
-    <>
-      <div className='min-h-screen flex flex-col bg-slate-50 '>
-          <Header />
-          <main className='flex-1'>
-            <Outlet /> {/* This is what renders all child routes */}
-          </main>
-          <Footer />
-        </div>
-      {/* </div> */}
-    </>
-  ) : null
+  if (loading) {
+    return <LoadingScreen />   // 👈 show designer splash instead of null
+  }
+
+  return (
+    <div className='min-h-screen flex flex-col bg-slate-50'>
+      <Header />
+      <main className='flex-1'>
+        <Outlet /> {/* renders all child routes */}
+      </main>
+      <Footer />
+    </div>
+  )
 }
 
 export default App
